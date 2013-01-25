@@ -1,0 +1,63 @@
+body {
+	font-size: 13px;
+	color: #333;
+	font-weight: 100;
+}
+h3{
+	padding: 0px;
+	margin: 0px;
+}
+strong{
+	font-weight: 600;
+	font-size: 14px;
+	color: #444;
+}
+table {
+	font-size: 13px;
+	color: #666;
+	empty-cells:show;
+	border-collapse:collapse;
+}
+th{
+	background: url(../images/manage_06.gif) repeat-x;
+	line-height: 1.8;
+	font-weight: normal;
+}
+td{
+	line-height: 2.0;
+	text-align: center;
+	font-size: 12px;
+}
+a{
+  color:#f00;
+  text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.current {
+	color: #444;
+	background: url(../images/manage_06.gif);
+	display: block;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+}
+.bg{
+	color: #444;
+	display: block;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	background: #efefef;
+}
+.bg2 {
+	display: block;
+	clear: both;
+	margin: 0px auto;
+	text-align: center;
+}
+.file {
+	border: 1px solid #666666;
+}
+.td_left{
+	text-align: left;
+}

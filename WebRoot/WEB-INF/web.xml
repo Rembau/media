@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>landing.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+  	<listener-class>listenerEvent.SessionListener</listener-class>
+  </listener>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>servlet.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginJump</servlet-name>
+    <servlet-class>servlet.LoginJump</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePW</servlet-name>
+    <servlet-class>servlet.ChangePW</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Addapplication</servlet-name>
+    <servlet-class>servlet.Addapplication</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFault</servlet-name>
+    <servlet-class>servlet.AddFault</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FaultSolve</servlet-name>
+    <servlet-class>servlet.FaultSolve</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FaultExplain</servlet-name>
+    <servlet-class>servlet.FaultExplain</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Applicationruku</servlet-name>
+    <servlet-class>teacher.Applicationruku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletFather</servlet-name>
+    <servlet-class>superadmin.ServletFather</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/servlet/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginJump</servlet-name>
+    <url-pattern>/servlet/LoginJump</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePW</servlet-name>
+    <url-pattern>*.ChangePW</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Addapplication</servlet-name>
+    <url-pattern>*.Addapplication</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFault</servlet-name>
+    <url-pattern>*.AddFault</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FaultSolve</servlet-name>
+    <url-pattern>*.FaultSolve</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FaultExplain</servlet-name>
+    <url-pattern>*.FaultExplain</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Applicationruku</servlet-name>
+    <url-pattern>*.Applicationruku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletFather</servlet-name>
+    <url-pattern>/servlet/ServletFather</url-pattern>
+  </servlet-mapping>
+  <session-config>
+  <session-timeout>1</session-timeout>
+  </session-config>
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error/NotFound.jsp</location>
+  </error-page>
+  <error-page>
+  	<error-code>501</error-code>
+  	<location>/error/Fault.jsp</location>
+  </error-page>
+  <filter>
+  	<filter-name>FilterEncode</filter-name>
+  	<filter-class>filters.FilterEncode</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>FilterEncode</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>Changeany</servlet-name>
+  	<servlet-class>servlet.Changeanyruku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Absendrecordruku</servlet-name>
+    <servlet-class>admin.Absendrecordruku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Addapplicationruku</servlet-name>
+    <servlet-class>admin.Addapplicationruku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Adminrecordruku</servlet-name>
+    <servlet-class>admin.Adminrecordruku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Applicationruku1</servlet-name>
+    <servlet-class>teacher.Applicationruku1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Faultruku</servlet-name>
+    <servlet-class>teacher.Faultruku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Suggestionruku</servlet-name>
+    <servlet-class>teacher.Suggestionruku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SuggReply</servlet-name>
+    <servlet-class>superadmin.SuggReply</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WeekRuku</servlet-name>
+    <servlet-class>superadmin.WeekRuku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUser</servlet-name>
+    <servlet-class>superadmin.AddUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Remind</servlet-name>
+    <servlet-class>servlet.Remind</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>Changeany</servlet-name>
+  	<url-pattern>*.Changeany</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Absendrecordruku</servlet-name>
+    <url-pattern>*.Absendrecordruku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Addapplicationruku</servlet-name>
+    <url-pattern>*.Addapplicationruku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Adminrecordruku</servlet-name>
+    <url-pattern>*.Adminrecordruku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Applicationruku1</servlet-name>
+    <url-pattern>*.Applicationruku1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Faultruku</servlet-name>
+    <url-pattern>*.Faultruku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Suggestionruku</servlet-name>
+    <url-pattern>*.Suggestionruku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SuggReply</servlet-name>
+    <url-pattern>*.SuggReply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WeekRuku</servlet-name>
+    <url-pattern>*.WeekRuku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUser</servlet-name>
+    <url-pattern>*.AddUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Remind</servlet-name>
+    <url-pattern>*.Remind</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Rukutest</servlet-name>
+  	<servlet-class>admin.Rukutest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Rukutest</servlet-name>
+  	<url-pattern>*.Rukutest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>LayerRuku</servlet-name>
+  	<servlet-class>servlet.LayerRuku</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletRoom</servlet-name>
+    <servlet-class>superadmin.DeletRoom</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletRoomSure</servlet-name>
+    <servlet-class>superadmin.DeletRoomSure</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteSite</servlet-name>
+    <servlet-class>superadmin.DeleteSite</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LuruRoom</servlet-name>
+    <servlet-class>superadmin.LuruRoom</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>LayerRuku</servlet-name>
+  	<url-pattern>*.LayerRuku</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletRoom</servlet-name>
+    <url-pattern>*.DeletRoom</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletRoomSure</servlet-name>
+    <url-pattern>*.DeletRoomSure</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSite</servlet-name>
+    <url-pattern>*.DeleteSite</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LuruRoom</servlet-name>
+    <url-pattern>*.LuruRoom</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Manager</servlet-name>
+  	<servlet-class>log.Manager</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+  	<servlet-name>TestBackup</servlet-name>
+  	<servlet-class>backup.TestBackup</servlet-class>
+  	<load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Export</servlet-name>
+    <servlet-class>servlet.Export</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Lookjump</servlet-name>
+    <servlet-class>superadmin.Lookjump</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteTeacherApp</servlet-name>
+    <servlet-class>superadmin.DeleteTeacherApp</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeS</servlet-name>
+    <servlet-class>admin.ChangeS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Activation</servlet-name>
+    <servlet-class>teacher.Activation</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertClash</servlet-name>
+    <servlet-class>teacher.InsertClash</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClashHandle</servlet-name>
+    <servlet-class>teacher.ClashHandle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CancelApplication</servlet-name>
+    <servlet-class>servlet.CancelApplication</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StatsPicture_servlet</servlet-name>
+    <servlet-class>superadmin.StatsPicture_servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeHelp</servlet-name>
+    <servlet-class>superadmin.ChangeHelp</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CannotSelectDate</servlet-name>
+    <servlet-class>superadmin.CannotSelectDate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DepartmentAlert</servlet-name>
+    <servlet-class>superadmin.DepartmentAlert</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeCourse</servlet-name>
+    <servlet-class>superadmin.ChangeCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitWeb</servlet-name>
+    <servlet-class>superadmin.InitWeb</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>Export</servlet-name>
+  	<url-pattern>*.Export</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Lookjump</servlet-name>
+    <url-pattern>*.Lookjump</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteTeacherApp</servlet-name>
+    <url-pattern>*.DeleteTeacherApp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeS</servlet-name>
+    <url-pattern>*.ChangeS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Activation</servlet-name>
+    <url-pattern>*.Activation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertClash</servlet-name>
+    <url-pattern>*.InsertClash</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClashHandle</servlet-name>
+    <url-pattern>*.ClashHandle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CancelApplication</servlet-name>
+    <url-pattern>*.CancelApplication</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StatsPicture_servlet</servlet-name>
+    <url-pattern>*.StatsPicture_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeHelp</servlet-name>
+    <url-pattern>*.ChangeHelp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CannotSelectDate</servlet-name>
+    <url-pattern>*.CannotSelectDate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DepartmentAlert</servlet-name>
+    <url-pattern>/servlet/DepartmentAlert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeCourse</servlet-name>
+    <url-pattern>*.ChangeCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InitWeb</servlet-name>
+    <url-pattern>*.InitWeb</url-pattern>
+  </servlet-mapping>
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/error/Fault.jsp</location>
+  </error-page>
+
+</web-app>
