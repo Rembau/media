@@ -38,16 +38,16 @@ public class Activation extends ServletFather {
 			Conn c=new Conn();
 			c.getConn();
 			ResultSet rs1=s.select(c.getStmt(), sql);
-			if(rs.next()&&rs1.getString("user_state").equals("Õı³£")){
-				out.print("<script>alert('¸ÃÕÊºÅÒÑ¾­¼¤»î');window.location.href='./activation.jsp';</script>");
+			if(rs.next()&&rs1.getString("user_state").equals("æ­£å¸¸")){
+				out.print("<script>alert('è¯¥å¸å·å·²ç»æ¿€æ´»');window.location.href='./activation.jsp';</script>");
 			}
 			else if(rs.next()){
-				sql="update media_users set user_state='Õı³£' where user_num='"+session.getAttribute("num")+"'";
+				sql="update media_users set user_state='æ­£å¸¸' where user_num='"+session.getAttribute("num")+"'";
                 s.updata(sql);
-				out.print("<script>alert('¼¤»î³É¹¦');window.location.href='./activation.jsp';</script>");
+				out.print("<script>alert('æ¿€æ´»æˆåŠŸ');window.location.href='./activation.jsp';</script>");
 			}
 			else {
-				out.print("<script>alert('¶àÃ½ÌåÖ¤ºÅ´íÎó,Çë×ĞÏ¸¼ì²é,ÈçÓĞÒÉÎÊÇëÁªÏµµç½Ì²¿');window.location.href='./activation.jsp';</script>");
+				out.print("<script>alert('å¤šåª’ä½“è¯å·é”™è¯¯,è¯·ä»”ç»†æ£€æŸ¥,å¦‚æœ‰ç–‘é—®è¯·è”ç³»ç”µæ•™éƒ¨');window.location.href='./activation.jsp';</script>");
 			}
 			c.close();
 		} catch (SQLException e) {
